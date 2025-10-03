@@ -1,0 +1,600 @@
+{
+  "macros": [
+    {
+      "key": "LIB_BOOT_STAGE2_HEADERS",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_ATOMIC",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_BIT_OPS",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_BIT_OPS_PICO",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_CLIB_INTERFACE",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_CRT0",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_CXX_OPTIONS",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_DIVIDER",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_DIVIDER_HARDWARE",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_DOUBLE",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_DOUBLE_PICO",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_FLASH",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_FLOAT",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_FLOAT_PICO",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_INT64_OPS",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_INT64_OPS_PICO",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_MALLOC",
+      "value": "1"
+    },
+    {
+      "key": "PICO_USE_MALLOC_MUTEX",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_MEM_OPS",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_MEM_OPS_PICO",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_NEWLIB_INTERFACE",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_PLATFORM",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_PLATFORM_COMMON",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_PLATFORM_COMPILER",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_PLATFORM_PANIC",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_PLATFORM_SECTIONS",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_PRINTF",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_PRINTF_PICO",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_RUNTIME",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_RUNTIME_INIT",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_STANDARD_BINARY_INFO",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_STANDARD_LINK",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_STDIO",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_STDIO_UART",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_STDLIB",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_SYNC",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_SYNC_CRITICAL_SECTION",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_SYNC_MUTEX",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_SYNC_SEM",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_TIME",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_TIME_ADAPTER",
+      "value": "1"
+    },
+    {
+      "key": "LIB_PICO_UTIL",
+      "value": "1"
+    },
+    {
+      "key": "PICO_32BIT",
+      "value": "1"
+    },
+    {
+      "key": "PICO_PLATFORM",
+      "value": "rp2040"
+    },
+    {
+      "key": "PICO_BOARD",
+      "value": "pico"
+    },
+    {
+      "key": "PICO_BUILD",
+      "value": "1"
+    },
+    {
+      "key": "PICO_CMAKE_BUILD_TYPE",
+      "value": "Release"
+    },
+    {
+      "key": "PICO_COPY_TO_RAM",
+      "value": "0"
+    },
+    {
+      "key": "PICO_CXX_ENABLE_EXCEPTIONS",
+      "value": "1"
+    },
+    {
+      "key": "PICO_NO_FLASH",
+      "value": "0"
+    },
+    {
+      "key": "PICO_NO_HARDWARE",
+      "value": "0"
+    },
+    {
+      "key": "PICO_ON_DEVICE",
+      "value": "1"
+    },
+    {
+      "key": "PICO_RP2040",
+      "value": "1"
+    },
+    {
+      "key": "PICO_TARGET_NAME",
+      "value": "pico_stdlib_test"
+    },
+    {
+      "key": "PICO_USE_BLOCKED_RAM",
+      "value": "0"
+    },
+    {
+      "key": "PICO_SDK_PATH",
+      "value": "./deps/pico-sdk/"
+    },
+    {
+      "key": "PARAM_ASSERTIONS_ENABLE_ALL",
+      "value": "1"
+    },
+    {
+      "key": "PICO_STDIO_USB_ENABLE_IRQ_BACKGROUND_TASK",
+      "value": "1"
+    },
+    {
+      "key": "CFG_TUD_ENABLED",
+      "value": "1"
+    },
+    {
+      "key": "CFG_TUD_CDC",
+      "value": "1"
+    },
+    {
+      "key": "CFG_TUSB_OS",
+      "value": "OPT_OS_PICO"
+    },
+    {
+      "key": "TUP_DCD_ENDPOINT_MAX",
+      "value": "8"
+    },
+    {
+      "key": "PICO_MAX_SHARED_IRQ_HANDLERS",
+      "value": "10"
+    }
+  ],
+  "includes": [
+    {
+      "header": "",
+      "cfiles": [
+        "./bs2_default_padded_checksummed.S"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2040/boot_stage2/asminclude",
+      "cfiles": [
+        "deps/pico-sdk/src/rp2040/boot_stage2/compile_time_choice.S"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/common/pico_stdlib_headers/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_gpio/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2_common/hardware_gpio/gpio.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/common/pico_base_headers/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/generated/pico_base",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/boards/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2040/pico_platform/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2040/pico_platform/platform.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2040/hardware_regs/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_base/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_platform_common/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_platform_compiler/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_platform_panic/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2_common/pico_platform_panic/panic.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_platform_sections/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2040/hardware_structs/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/common/hardware_claim/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/common/hardware_claim/claim.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_sync/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2_common/hardware_sync/sync.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_sync_spin_lock/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_irq/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2_common/pico_crt0/crt0.S",
+        "deps/pico-sdk/src/rp2_common/pico_crt0/embedded_end_block.inc.S",
+        "deps/pico-sdk/src/rp2_common/pico_crt0/embedded_start_block.inc.S",
+        "deps/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S",
+        "deps/pico-sdk/src/rp2_common/hardware_irq/irq.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_uart/include",
+      "sys_include": true,
+      "cfiles": [
+        "./deps/pico-sdk/src/rp2_common/hardware_uart/uart.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_resets/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_clocks/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2_common/hardware_clocks/clocks.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_pll/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2_common/hardware_pll/pll.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_vreg/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_watchdog/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_ticks/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2_common/hardware_ticks/ticks.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_bootrom/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/common/boot_picoboot_headers/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/boot_bootrom_headers/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_boot_lock/include",
+      "sys_include": true,
+      "cfiles": [
+        "./deps/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_flash/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/common/pico_time/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/common/pico_time/time.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_timer/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2_common/hardware_timer/timer.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/common/pico_sync/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/common/pico_sync/critical_section.c",
+        "deps/pico-sdk/src/common/pico_sync/lock_core.c",
+        "deps/pico-sdk/src/common/pico_sync/mutex.c",
+        "deps/pico-sdk/src/common/pico_sync/sem.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/common/pico_util/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_time_adapter/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_xosc/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2_common/hardware_xosc/xosc.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_divider/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_runtime/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_runtime_init/include",
+      "sys_include": true,
+      "cfiles": [
+        "./deps/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c",
+        "./deps/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c",
+        "./deps/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/common/pico_bit_ops_headers/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/common/pico_divider_headers/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_double/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_float/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_malloc/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2_common/pico_malloc/malloc.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/common/pico_binary_info/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_printf/include",
+      "sys_include": true,
+      "cfiles": [
+        "./deps/pico-sdk/src/rp2_common/pico_printf/printf.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_stdio/include",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2_common/pico_stdio/stdio.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_stdio_uart/include",
+      "sys_include": true,
+      "cfiles": [
+        "./deps/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_multicore/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/common/boot_picobin_headers/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/common/boot_picobin_headers/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_mem_ops/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2040/boot_stage2/include",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/tinyusb/src/",
+      "sys_include": true,
+      "cfiles": []
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_stdio_usb/include/",
+      "sys_include": true,
+      "cfiles": [
+        "deps/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/pico_clib_interface/include/",
+      "sys_include": true,
+      "cfiles": []
+    }
+  ]
+}
