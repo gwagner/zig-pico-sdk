@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo openocd -s tcl -f /usr/share/openocd/scripts/interface/cmsis-dap.cfg -c "set USE_CORE 0" -f /usr/share/openocd/scripts/target/rp2040.cfg -c "adapter speed 5000" 
