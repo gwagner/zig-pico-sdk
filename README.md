@@ -11,4 +11,8 @@ This project is by no means mature, just goofing around trying to see if I can g
 
 ## Build
 
-I need to do work for the external dependencies, but you should be able to run `zig build && elfuf2-rs zig-out/bin/test image.uf2` from the root of the project, and a build should pop out?
+Start by running `./openocd` from the root of the dir.  As long as your Pico is plugged in, this should start an openocd session.
+
+Next, run `./build`, this should build and open up GDB with a debug session to load and run your program.
+
+I still need to do work for the external dependencies. 
