@@ -13,10 +13,6 @@ const fileTypes = enum {
 };
 
 pub fn build(b: *std.Build) !void {
-    var arena = std.heap.ArenaAllocator.init(std.heap.page_allocator);
-    defer arena.deinit();
-    const allocator = arena.allocator();
-
     const optimize = b.standardOptimizeOption(.{});
 
     const target = b.resolveTargetQuery(.{
@@ -34,6 +30,30 @@ pub fn build(b: *std.Build) !void {
             .optimize = optimize,
         }),
     });
+
+    try setupPico(b, exe);
+
+    b.installArtifact(exe);
+
+    // I2c Demo
+    const i2c = b.addExecutable(.{
+        .name = "i2c_demo",
+        .root_module = b.createModule(.{
+            .root_source_file = b.path("src/i2c.zig"),
+            .target = target,
+            .optimize = optimize,
+        }),
+    });
+
+    try setupPico(b, i2c);
+
+    b.installArtifact(i2c);
+}
+
+fn setupPico(b: *std.Build, exe: *std.Build.Step.Compile) !void {
+    var arena = std.heap.ArenaAllocator.init(std.heap.page_allocator);
+    defer arena.deinit();
+    const allocator = arena.allocator();
 
     exe.addIncludePath(b.path("."));
     exe.link_gc_sections = true;
@@ -92,8 +112,6 @@ pub fn build(b: *std.Build) !void {
                 },
             }),
         };
-
-    b.installArtifact(exe);
 }
 
 const parsed_cIncludes = struct {

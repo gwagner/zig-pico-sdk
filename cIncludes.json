@@ -251,6 +251,18 @@
     {
       "key": "PICO_MAX_SHARED_IRQ_HANDLERS",
       "value": "10"
+    },
+    {
+      "key": "PICO_USE_STACK_GUARDS",
+      "value": "1"
+    },
+    {
+      "key": "PICO_HEAP_SIZE",
+      "value": "4096"
+    },
+    {
+      "key": "PICO_STACK_SIZE",
+      "value": "4096"
     }
   ],
   "includes": [
@@ -278,6 +290,13 @@
       "sys_include": true,
       "cfiles": [
         "deps/pico-sdk/src/rp2_common/hardware_gpio/gpio.c"
+      ]
+    },
+    {
+      "header": "deps/pico-sdk/src/rp2_common/hardware_i2c/include",
+      "sys_include": true,
+      "cfiles": [
+        "./deps/pico-sdk/src/rp2_common/hardware_i2c/i2c.c"
       ]
     },
     {

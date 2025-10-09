@@ -1,5 +1,5 @@
 #!/bin/bash
 
-zig build && elf2uf2-rs ./zig-out/bin/test image.uf2
+zig build && elf2uf2-rs ./zig-out/bin/i2c_demo image.uf2
 
-gdb ./zig-out/bin/test
+gdb ./zig-out/bin/i2c_demo
